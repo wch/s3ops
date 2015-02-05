@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 #' @export
 `+.A` <- function (e1, e2) {
-  paste0("<", class(e1), "> + <", class(e2), ">")
+  paste0("Called <", class(e1), "> + <", class(e2), ">")
 }
 
 #' @export
@@ -17,7 +17,7 @@
 # are registered as S3 methods when the package is loaded, with .onLoad below.
 
 plus <- function (e1, e2) {
-  paste0("<", class(e1), "> + <", class(e2), ">")
+  paste0("Called <", class(e1), "> + <", class(e2), ">")
 }
 
 
@@ -25,8 +25,8 @@ plus <- function (e1, e2) {
 # Using Ops for all operators, classes E and F
 # -----------------------------------------------------------------------------
 #' @export
-Ops.E <- function(e1, e2, ...){
-  paste0("<", class(e1), "> ", .Generic, " <", class(e2), ">")
+Ops.E <- function(e1, e2, ...) {
+  paste0("Called <", class(e1), "> ", .Generic, " <", class(e2), ">")
 }
 
 #' @export
@@ -38,7 +38,7 @@ Ops.F <- Ops.E
 # -----------------------------------------------------------------------------
 #' @export
 operators <- function(e1, e2, ...){
-  paste0("<", class(e1), "> ", .Generic, " <", class(e2), ">")
+  paste0("Called <", class(e1), "> ", .Generic, " <", class(e2), ">")
 }
 
 

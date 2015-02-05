@@ -3,25 +3,25 @@
 # -----------------------------------------------------------------------------
 
 #' @export
-A <- structure(list(), class = "A")
+A <- structure("A", class = "A")
 
 #' @export
-B <- structure(list(), class = "B")
+B <- structure("B", class = "B")
 
 #' @export
-C <- structure(list(), class = "C")
+C <- structure("C", class = "C")
 
 #' @export
-D <- structure(list(), class = "D")
+D <- structure("D", class = "D")
 
 #' @export
-E <- structure(list(), class = "E")
+E <- structure("E", class = "E")
 
 #' @export
-F <- structure(list(), class = "F")
+F <- structure("F", class = "F")
 
 #' @export
-G <- structure(list(), class = "G")
+G <- structure("G", class = "G")
 
 #' @export
 H <- structure(list(), class = "H")
