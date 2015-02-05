@@ -1,0 +1,6 @@
+Package: s3ops
+Title: S3 dispatch on operators
+Version: 1.0
+Authors@R: person("Winston", "Chang", role = c("aut", "cre"), email = "winston@stdout.org")
+Description: Example package for demonstrating S3 dispatch on operators.
+License: GPL-2
