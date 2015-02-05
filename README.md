@@ -54,11 +54,11 @@ X + Y
 
 ## The problem returns in packages
 
-Surprisingly, the solution above doesn't work if you do it in a package! In this package, **s3ops**, the functions `+.A` and `+.B` are defined the same way as +.X` and `+.Y` are in the immediately preceding example, but using them to add objects of class `A` and `B` result in the error and "Incompatible methods" warning.
+Surprisingly, the solution above doesn't work if you do it in a package! In this package, **s3ops**, the functions `+.A` and `+.B` are defined the same way as `+.X` and `+.Y` are in the immediately preceding example, but using them to add objects of class `A` and `B` result in the error and "Incompatible methods" warning.
 
 
 ```R
-install_github('wch/s3ops')
+devtools::install_github('wch/s3ops')
 library(s3ops)
 
 # Objects A and B already are defined:
